@@ -19,6 +19,7 @@ import {
 import { ImageEditor } from './ImageEditor';
 import LoginForm from './LoginForm';
 import { ProtectedImage } from './ProtectedImage';
+import { BASE_URL } from './config';
 
 interface Image {
   url: string;
@@ -392,7 +393,7 @@ function App() {
           <div className="flex items-center justify-between h-16">
             <div className="flex items-center space-x-2">
               {/* <ImageIcon className="h-6 w-6 text-indigo-600 dark:text-indigo-400" /> */}
-              <img src="/figurinhas/logo.png" className="h-6 w-6" alt="Logo" />
+              <img src={`${BASE_URL}logo.png`} className="h-6 w-6" alt="Logo" />
               <h1 className="text-xl font-semibold text-gray-900 dark:text-white">
                 Tamara Designer
               </h1>
